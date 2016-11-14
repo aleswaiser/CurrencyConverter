@@ -43,6 +43,7 @@ function currencyConverter($amount, $from = 'RUB', $to = 'RUB', $source = '')
                 $toRate = $toRate / $nominal;
             }
         }
+
         inCache($from, $to, $act = 'set', $fromRate, $toRate);
 
         $conversionRate = $fromRate / $toRate;
